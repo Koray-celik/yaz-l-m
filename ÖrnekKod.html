@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basit İnternet Sitesi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Yazılım Projesi</h1>
+  </header>
+
+  <main>
+    <p>Bu, basit bir internet sitesi örneğidir.</p>
+    <button onclick="gosterMesaj()">Buton1</button>
+
+    <p id="mesaj"></p>
+  </main>
+
+  <script>
+    function gosterMesaj() {
+      document.getElementById("mesaj").textContent = "Butona tıklandı!";
+    }
+  </script>
+
+</body>
+
+</html>
